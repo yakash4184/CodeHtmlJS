@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Visibility</title>
+  <style>
+    #content {
+      display: block;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <h1>Hello, World!</h1>
+    <p>This is a simple example of toggling visibility using JavaScript.</p>
+  </div>
+  <button id="toggleButton">Toggle Visibility</button>
+
+  <script>
+    document.getElementById('toggleButton').addEventListener('click', function() {
+      var content = document.getElementById('content');
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+      } else {
+        content.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
