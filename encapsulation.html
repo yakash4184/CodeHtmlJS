@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class BankAccount {
+            constructor(customerName, balance = 0){
+                this.customerName = customerName;
+                this.balance = balance;
+            }
+            deposite(amount) {
+                this.#balance += amount;
+            }
+            withdraw(amount){
+                this.#balance -= amount;
+            }
+
+            set balance(amount){
+                if(isNaN(amount){
+                    throw new Error('Amount is not a valid input');
+                }
+                this.#balance = amount;
+            }
+            get balance(){
+                return this.#balance;
+            }
+
+                })
+            }
+        }
+    
+</body>
+</html>
